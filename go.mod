@@ -1,1 +1,1 @@
-module polyline
+module github.com/marinewater/polyline
