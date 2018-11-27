@@ -1,3 +1,4 @@
+// Package polyline provides functions to encode/decode polylines in "Encoded Polyline Algorithm Format"
 package polyline
 
 import (
