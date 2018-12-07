@@ -62,6 +62,10 @@ func (c *chunks) Coordinate(precision uint32) float64 {
 // slice splits elements into group of "length" bits
 func (c *chunks) slice(element int32, length int) {
 
+	if element == 0 {
+		*c = []int32{0}
+		return
+	}
 	chunkSlice := []int32{}
 
 	bitMask := int32(31)

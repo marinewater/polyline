@@ -95,12 +95,40 @@ func TestEncode(t *testing.T) {
 			Precision: 6,
 			Expected:  "pfdnfAjic_iCsK~}Es_@sAvEgpBne@cjB",
 		},
+		{
+			Points: []polyline.Point{
+				{
+					Latitude:  -37.472889,
+					Longitude: -72.353958,
+				},
+				{
+					Latitude:  -37.472889,
+					Longitude: -72.353958,
+				},
+			},
+			Precision: 5,
+			Expected:  "p|ucFfsrxL??",
+		},
+		{
+			Points: []polyline.Point{
+				{
+					Latitude:  -37.472889,
+					Longitude: -72.353958,
+				},
+				{
+					Latitude:  -37.472889,
+					Longitude: -72.353958,
+				},
+			},
+			Precision: 6,
+			Expected:  "pfdnfAjic_iC??",
+		},
 	}
 
 	for _, tt := range encodeTests {
 
 		if result := polyline.Encode(tt.Points, tt.Precision); result != tt.Expected {
-			t.Errorf("Expected: %s, got: %s", tt.Expected, result)
+			t.Errorf("Expected: \"%s\", got: \"%s\"", tt.Expected, result)
 		}
 	}
 
@@ -141,6 +169,19 @@ func TestEncode5(t *testing.T) {
 				},
 			},
 			Expected: "_p~iF~ps|U_ulLnnqC_mqNvxq`@",
+		},
+		{
+			Points: []polyline.Point{
+				{
+					Latitude:  -37.472889,
+					Longitude: -72.353958,
+				},
+				{
+					Latitude:  -37.472889,
+					Longitude: -72.353958,
+				},
+			},
+			Expected: "p|ucFfsrxL??",
 		},
 	}
 
@@ -204,6 +245,19 @@ func TestEncode6(t *testing.T) {
 				},
 			},
 			Expected: "pfdnfAjic_iCsK~}Es_@sAvEgpBne@cjB",
+		},
+		{
+			Points: []polyline.Point{
+				{
+					Latitude:  -37.472889,
+					Longitude: -72.353958,
+				},
+				{
+					Latitude:  -37.472889,
+					Longitude: -72.353958,
+				},
+			},
+			Expected: "pfdnfAjic_iC??",
 		},
 	}
 
@@ -315,6 +369,34 @@ func TestDecode(t *testing.T) {
 				},
 			},
 		},
+		{
+			Polyline:  "p|ucFfsrxL??",
+			Precision: 5,
+			Expected: []polyline.Point{
+				{
+					Latitude:  -37.472889,
+					Longitude: -72.353958,
+				},
+				{
+					Latitude:  -37.472889,
+					Longitude: -72.353958,
+				},
+			},
+		},
+		{
+			Polyline:  "pfdnfAjic_iC??",
+			Precision: 6,
+			Expected: []polyline.Point{
+				{
+					Latitude:  -37.472889,
+					Longitude: -72.353958,
+				},
+				{
+					Latitude:  -37.472889,
+					Longitude: -72.353958,
+				},
+			},
+		},
 	}
 
 	for _, tt := range decodeTests {
@@ -364,6 +446,19 @@ func TestDecode5(t *testing.T) {
 				{
 					Latitude:  43.252,
 					Longitude: -126.453,
+				},
+			},
+		},
+		{
+			Polyline: "p|ucFfsrxL??",
+			Expected: []polyline.Point{
+				{
+					Latitude:  -37.472889,
+					Longitude: -72.353958,
+				},
+				{
+					Latitude:  -37.472889,
+					Longitude: -72.353958,
 				},
 			},
 		},
@@ -428,6 +523,19 @@ func TestDecode6(t *testing.T) {
 				{
 					Latitude:  -37.472273,
 					Longitude: -72.355672,
+				},
+				{
+					Latitude:  -37.472889,
+					Longitude: -72.353958,
+				},
+			},
+		},
+		{
+			Polyline: "pfdnfAjic_iC??",
+			Expected: []polyline.Point{
+				{
+					Latitude:  -37.472889,
+					Longitude: -72.353958,
 				},
 				{
 					Latitude:  -37.472889,
