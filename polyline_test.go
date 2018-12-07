@@ -374,12 +374,12 @@ func TestDecode(t *testing.T) {
 			Precision: 5,
 			Expected: []polyline.Point{
 				{
-					Latitude:  -37.472889,
-					Longitude: -72.353958,
+					Latitude:  -37.47289,
+					Longitude: -72.35396,
 				},
 				{
-					Latitude:  -37.472889,
-					Longitude: -72.353958,
+					Latitude:  -37.47289,
+					Longitude: -72.35396,
 				},
 			},
 		},
@@ -453,12 +453,12 @@ func TestDecode5(t *testing.T) {
 			Polyline: "p|ucFfsrxL??",
 			Expected: []polyline.Point{
 				{
-					Latitude:  -37.472889,
-					Longitude: -72.353958,
+					Latitude:  -37.47289,
+					Longitude: -72.35396,
 				},
 				{
-					Latitude:  -37.472889,
-					Longitude: -72.353958,
+					Latitude:  -37.47289,
+					Longitude: -72.35396,
 				},
 			},
 		},
