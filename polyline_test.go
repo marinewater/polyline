@@ -1,7 +1,7 @@
 package polyline_test
 
 import (
-	"polyline"
+	"github.com/marinewater/polyline"
 	"reflect"
 	"testing"
 )
