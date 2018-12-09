@@ -1,4 +1,6 @@
 # polyline
+[![Build Status](https://travis-ci.org/marinewater/polyline.svg?branch=master)](https://travis-ci.org/marinewater/polyline)
+
 Go package to encode/decode polylines in "Encoded Polyline Algorithm Format"
 
 ## Types
