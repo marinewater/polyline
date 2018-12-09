@@ -1,5 +1,6 @@
 # polyline
 [![Build Status](https://travis-ci.org/marinewater/polyline.svg?branch=master)](https://travis-ci.org/marinewater/polyline)
+[![codecov](https://codecov.io/gh/marinewater/polyline/branch/master/graph/badge.svg)](https://codecov.io/gh/marinewater/polyline)
 [![License](https://img.shields.io/github/license/marinewater/polyline.svg)](https://github.com/marinewater/polyline/blob/master/LICENSE)
 
 Go package to encode/decode polylines in "Encoded Polyline Algorithm Format"
