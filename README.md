@@ -3,6 +3,7 @@
 [![codecov](https://codecov.io/gh/marinewater/polyline/branch/master/graph/badge.svg)](https://codecov.io/gh/marinewater/polyline)
 [![License](https://img.shields.io/github/license/marinewater/polyline.svg)](https://github.com/marinewater/polyline/blob/master/LICENSE)
 [![Go Report Card](https://goreportcard.com/badge/github.com/marinewater/polyline)](https://goreportcard.com/report/github.com/marinewater/polyline)
+[![GoDoc](https://godoc.org/github.com/marinewater/polyline?status.svg)](https://godoc.org/github.com/marinewater/polyline)
 
 Go package to encode/decode polylines in "Encoded Polyline Algorithm Format"
 
