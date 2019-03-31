@@ -1,6 +1,5 @@
 # polyline
-[![Gitlab pipeline status (branch)](https://img.shields.io/gitlab/pipeline/marinewater/polyline/master.svg?style=flat-square)](https://gitlab.com/marinewater/polyline/pipelines)
-[![Build Status](https://travis-ci.org/marinewater/polyline.svg?branch=master)](https://travis-ci.org/marinewater/polyline)
+[![Gitlab pipeline status (branch)](https://img.shields.io/gitlab/pipeline/marinewater/polyline/master.svg)](https://gitlab.com/marinewater/polyline/pipelines)
 [![codecov](https://codecov.io/gh/marinewater/polyline/branch/master/graph/badge.svg)](https://codecov.io/gh/marinewater/polyline)
 [![License](https://img.shields.io/github/license/marinewater/polyline.svg)](https://github.com/marinewater/polyline/blob/master/LICENSE)
 [![Go Report Card](https://goreportcard.com/badge/github.com/marinewater/polyline)](https://goreportcard.com/report/github.com/marinewater/polyline)
