@@ -16,7 +16,7 @@ func (c *chunks) Parse(element int32) {
 // ParseLine converts and splices string into integer chunks
 func (c *chunks) ParseLine(line string) {
 
-	chunkSlice := []int32{}
+	var chunkSlice []int32
 
 	for index, letter := range line {
 		elementInt := int32(letter) - 63

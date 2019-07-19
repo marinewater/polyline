@@ -62,7 +62,7 @@ func Encode6(points []Point) string {
 func Decode(polyline string, precision uint32) []Point {
 
 	group := ""
-	coordinates := []float64{}
+	var coordinates []float64
 
 	for _, letter := range polyline {
 		group += string(letter)
@@ -73,7 +73,7 @@ func Decode(polyline string, precision uint32) []Point {
 		}
 	}
 
-	points := []Point{}
+	var points []Point
 	for i := 1; i < len(coordinates); i += 2 {
 		points = append(points, Point{
 			Latitude:  round(coordinates[i-1], precision),
@@ -113,7 +113,7 @@ func encodeElement(element float64, precision uint32) string {
 		elementInt = ^elementInt
 	}
 
-	var c chunks
+	c := chunks{}
 	c.Parse(elementInt)
 
 	return c.String()
@@ -124,7 +124,7 @@ func encodeElement(element float64, precision uint32) string {
 // from the "Encoded Polyline Algorithm Format"
 func decodeElement(group string, precision uint32) float64 {
 
-	var c chunks
+	c := chunks{}
 	c.ParseLine(group)
 	return c.Coordinate(precision)
 }

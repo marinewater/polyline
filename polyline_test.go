@@ -280,12 +280,12 @@ func TestDecode(t *testing.T) {
 		{
 			Polyline:  "",
 			Precision: 5,
-			Expected:  []polyline.Point{},
+			Expected:  nil,
 		},
 		{
 			Polyline:  "a",
 			Precision: 5,
-			Expected:  []polyline.Point{},
+			Expected:  nil,
 		},
 		{
 			Polyline:  "~d|cN`~oia@",
@@ -318,12 +318,12 @@ func TestDecode(t *testing.T) {
 		{
 			Polyline:  "",
 			Precision: 6,
-			Expected:  []polyline.Point{},
+			Expected:  nil,
 		},
 		{
 			Polyline:  "a",
 			Precision: 6,
-			Expected:  []polyline.Point{},
+			Expected:  nil,
 		},
 		{
 			Polyline:  "ewl}zAwthf^ctAobBsUnl@",
@@ -417,11 +417,11 @@ func TestDecode5(t *testing.T) {
 	}{
 		{
 			Polyline: "",
-			Expected: []polyline.Point{},
+			Expected: nil,
 		},
 		{
 			Polyline: "a",
-			Expected: []polyline.Point{},
+			Expected: nil,
 		},
 		{
 			Polyline: "~d|cN`~oia@",
@@ -482,11 +482,11 @@ func TestDecode6(t *testing.T) {
 	}{
 		{
 			Polyline: "",
-			Expected: []polyline.Point{},
+			Expected: nil,
 		},
 		{
 			Polyline: "a",
-			Expected: []polyline.Point{},
+			Expected: nil,
 		},
 		{
 			Polyline: "ewl}zAwthf^ctAobBsUnl@",
